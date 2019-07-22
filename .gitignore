@@ -1,0 +1,8 @@
+db.sqlite3
+*.log
+*.pot
+*.pyc
+__pycache__/
+.vscode/
+myvenv
+.DS_Store

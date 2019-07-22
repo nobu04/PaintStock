@@ -1,0 +1,105 @@
+{% load static %}
+<div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-8 ">
+            <img class="img-fluid d-block mx-auto" src = "{{item.image.url}}" />
+        </div>
+        <div class="col-2">
+        </div>
+</div>
+<div class="row">
+        <div class="col-2">
+            </div>
+    <div class="col-4">
+        <p>タイトル</p>
+    </div>
+    <div class="col-4">
+        <p>{{ item.name }}</p>
+    </div>
+    <div class="col-2">
+        </div>
+</div>
+<div class="row">
+        <div class="col-2">
+            </div>
+    <div class="col-4">
+        <p>カテゴリー</p>
+    </div>
+    <div class="col-4">
+        {% if item.category == 1 %}
+        <p>作品</p>
+        {% else %}
+        <p>額縁</p>
+        {% endif %}
+    </div>
+    <div class="col-2">
+        </div>
+</div>
+
+<div class="row">
+        <div class="col-2">
+            </div>
+    <div class="col-4">
+        <p>ステータス</p>
+    </div>
+    <div class="col-4">
+            {% if item.status == 1 %}
+            <p>所持</p>
+            {% elif item.status == 2 %}
+            <p>売却</p>
+            {% else %}
+            <p>廃棄</p>
+            {% endif %}
+    </div>
+    <div class="col-2">
+        </div>
+</div>
+<div class="row">
+        <div class="col-2">
+            </div>
+    <div class="col-4">
+        <p>サイズ</p>
+    </div>
+    <div class="col-4">
+        <p>{{ item.size }}</p>
+    </div>
+    <div class="col-2">
+        </div>
+</div>
+<div class="row">
+        <div class="col-2">
+            </div>
+    <div class="col-4">
+        <p>備考</p>
+    </div>
+    <div class="col-4">
+        <p>{{ item.memo|linebreaksbr }}</p>
+    </div>
+    <div class="col-2">
+        </div>
+</div>
+<div class="row">
+        <div class="col-2">
+            </div>
+    <div class="col-4">
+        <p>登録日</p>
+    </div>
+    <div class="col-4">
+        <p>{{ item.created_at|date:"Y/m/d G:i:s" }}</p>
+    </div>
+    <div class="col-2">
+        </div>
+</div>
+<div class="row">
+        <div class="col-2">
+            </div>
+    <div class="col-4">
+        <p>購入者</p>
+    </div>
+    <div class="col-4">
+        <p>{{ item.bought_by }}</p>
+    </div>
+    <div class="col-2">
+        </div>
+</div>
