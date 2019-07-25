@@ -57,11 +57,9 @@ class BuyerForm(forms.ModelForm):
 
     class Meta:
         model = Buyer
-        fields = ('buyername', 'email','gender','age', 'adress')
+        fields = ('buyername','gender','age')
         widgets = {
                     'buyername': forms.TextInput(attrs={'placeholder':'氏名を入力'}),
-                    'email': forms.TextInput(attrs={'placeholder':'メールアドレスを入力'}),
                     'gender': forms.RadioSelect(),
                     'age': forms.TextInput(attrs={'rows':1}),
-                    'adress': forms.TextInput(attrs={'placeholder':'住所を入力'}),
                   }

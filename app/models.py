@@ -82,10 +82,7 @@ class Buyer(models.Model):
         unique=True,
         verbose_name='氏名',
     )
-    email = models.CharField(
-        verbose_name='メールアドレス',
-        max_length=200,
-    )
+
     gender = models.IntegerField(
         verbose_name='性別',
         choices=GENDER_CHOICES,
@@ -96,13 +93,9 @@ class Buyer(models.Model):
         verbose_name='年齢'
     )
 
-    adress = models.CharField(
-        verbose_name='住所',
-        max_length=200
-    )
-
-    related_user = models.ManyToManyField(User,
-    blank=False
+    related_user = models.ForeignKey(User, 
+        on_delete=models.CASCADE,
+        blank=False
     )
 
 
