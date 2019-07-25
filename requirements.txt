@@ -2,11 +2,12 @@ dj-database-url==0.5.0
 Django==2.1.3
 django-crispy-forms==1.7.2
 django-filter==2.0.0
+django-heroku==0.3.1
 django-widget-tweaks==1.4.3
 gunicorn==19.9.0
+mysqlclient==1.4.2.post1
 Pillow==6.0.0
+psycopg2==2.8.3
 PyMySQL==0.9.3
 pytz==2018.5
 whitenoise==4.1.3
-psycopg2==2.7.4
-django-heroku
