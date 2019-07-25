@@ -92,7 +92,6 @@ DATABASES = {
         }
     }
 
-WSGI_APPLICATION = 'config.wsgi.application'
 
 ALLOWED_HOSTS = ['paintstock.herokuapp.com']
 
