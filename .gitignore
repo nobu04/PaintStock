@@ -7,4 +7,4 @@ __pycache__/
 myvenv
 .DS_Store
 local_settings.py
-/etc./config/parameters.py
+/etc./parameters.py
