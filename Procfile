@@ -1,1 +1,1 @@
-web: gunicorn apl_name : proje --log-file -
+web: gunicorn apl_name : project --log-file -
