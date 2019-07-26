@@ -83,10 +83,10 @@ ALLOWED_HOSTS = ['paintstock.herokuapp.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_9100f6329763410',
-        'USER': 'b589cceb082634',
-        'PASSWORD': '152af104',
-        'HOST': 'us-cdbr-iron-east-02.cleardb.net',
+        'NAME': 'hdafc1o662wr68z8',
+        'USER': 'qr6r9bxydzdlcttj',
+        'PASSWORD': 'm16h5bwmno47ttmu',
+        'HOST': 'x3ztd854gaa7on6s.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
         'PORT': '3306',
         'ATOMIC_REQUESTS': True,
         'OPTIONS': {
