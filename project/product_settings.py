@@ -42,7 +42,11 @@ INSTALLED_APPS = [
     'crispy_forms',
     'app',
     'widget_tweaks',
+    'cloudinary', 
+    'cloudinary_storage',
 ]
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -144,3 +148,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 AUTH_USER_MODEL = 'app.User'
+
+CLOUDINARY_STORAGE = {
+'CLOUD_NAME': 'hpkwv7ldw',
+'API_KEY': '676464965491751',
+'API_SECRET': 'dj1YFVuryb09RqZI9hZHsdsXemc'
+}
